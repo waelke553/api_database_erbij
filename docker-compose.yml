@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+ api-database:
+  image: r0781669/python-api-database
+  ports:
+    - "8000:8000"
+  volumes:
+    - sqlite_useritems_volume:/code/sqlitedb
+
+
+volumes:
+  sqlite_useritems_volume:
